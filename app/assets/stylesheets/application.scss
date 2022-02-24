@@ -2,6 +2,7 @@
 @import "config/fonts";
 @import "config/colors";
 @import "config/bootstrap_variables";
+@import "config/mixins";
 
 //window appearance
 @import "window/index";
@@ -15,6 +16,16 @@
 @import "components/index";
 @import "pages/index";
 
+//models
+@import "lists";
+@import "bookmarks";
+
 main {
   min-height: 80vh;
+}
+
+@media screen and (max-width: 850px) {
+  main {
+    min-height: 90vh;
+  }
 }

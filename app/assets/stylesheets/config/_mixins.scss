@@ -1,0 +1,14 @@
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin background-cover-center {
+  background-position: center;
+  background-size: cover;
+}
+
+@mixin text-shadow-readability {
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}

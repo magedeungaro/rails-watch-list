@@ -1,11 +1,17 @@
 <main class="p-5">
   <div class="container w-80">
-    <% if @lists.empty?%>
-      <p>There are no lists to be displayed :(</p>
-    <% else %>
-      <% @lists.each do |list| %>
-        <%= link_to list.name, list_path(list) %>
+    <div class="row cols-3">
+      <% if @lists.empty?%>
+        <p>There are no lists to be displayed :(</p>
+      <% else %>
+        <% @lists.each do |list| %>
+          <a href="/lists/<%=list.id%>" class="text-decoration-none col-12 col-md-6 col-lg-2 m-1">
+            <div class="list--card text-white row text-center align-items-center" style="<%= prepend_image_gradient(list.image_url) %>">
+              <h3><%= list.name %></h3>
+            </div>
+          </a>
+        <% end %>
       <% end %>
-    <% end %>
+    </div>
   </div>
 </main>

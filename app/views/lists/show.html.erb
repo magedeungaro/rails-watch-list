@@ -1,10 +1,10 @@
-<main class="p-5">
-  <section class="poster" style="<%= prepend_image_gradient(@list.image_url) %>">
-    <div class="container">
-      <h1 class="text-white text-center"><%= @list.name %></h1>
-    </div>
-  </section>
+<section class="list--banner" style="<%= prepend_image_gradient(@list.image_url) %>">
+  <div class="container w-80">
+    <h1 class="text-white text-center fw-bold"><%= @list.name %></h1>
+  </div>
+</section>
 
+<main class="p-5">
   <section>
     <div class="container w-80">
       <% @list.bookmarks.each do |bookmark| %>
