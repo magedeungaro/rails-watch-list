@@ -1,1 +1,11 @@
 // Specific CSS for your home-page
+.home-page {
+  &--banner {
+    @include background-cover-center;
+    height: 250px;
+
+    & > .container {
+      height: 100%;
+    }
+  }
+}

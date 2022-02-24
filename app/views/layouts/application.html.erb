@@ -13,6 +13,8 @@
   <body>
     <%= render partial: 'shared/header' %>
 
+    <%= render partial: 'shared/banner' if current_page?(root_path)%>
+
     <%= yield %>
 
     <%= render partial: 'shared/footer' %>
