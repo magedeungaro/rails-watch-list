@@ -1,0 +1,16 @@
+<main class="p-5">
+  <section class="poster" style="<%= prepend_image_gradient(@list.image_url) %>">
+    <div class="container">
+      <h1 class="text-white text-center"><%= @list.name %></h1>
+    </div>
+  </section>
+
+  <section>
+    <div class="container w-80">
+      <% @list.bookmarks.each do |bookmark| %>
+        <p><%= bookmark.movie.title %></p>
+        <p><%= bookmark.comment %></p>
+      <% end %>
+    </div>
+  </section>
+</main>

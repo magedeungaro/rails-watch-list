@@ -4,7 +4,7 @@
       <p>There are no lists to be displayed :(</p>
     <% else %>
       <% @lists.each do |list| %>
-        <%= link_to list.name, list_path %>
+        <%= link_to list.name, list_path(list) %>
       <% end %>
     <% end %>
   </div>
