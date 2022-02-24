@@ -1,0 +1,11 @@
+<main class="p-5">
+  <div class="container w-80">
+    <% if @lists.empty?%>
+      <p>There are no lists to be displayed</p>
+    <% else %>
+      <% @lists.each do |list| %>
+        <%= link_to list.name, list_path %>
+      <% end %>
+    <% end %>
+  </div>
+</main>
