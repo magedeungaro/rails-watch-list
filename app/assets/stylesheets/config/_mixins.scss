@@ -4,7 +4,7 @@
   list-style: none;
 }
 
-@mixin background-cover($position) {
+@mixin set-background($position) {
   background-position: $position;
   background-size: cover;
 }

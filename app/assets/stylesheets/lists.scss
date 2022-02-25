@@ -3,7 +3,7 @@
 // You can use Sass (SCSS) here: https://sass-lang.com/
 .list{
   &--banner {
-    @include background-cover(center);
+    @include set-background(center);
 
     height: 300px;
     display: flex;
@@ -16,7 +16,7 @@
   }
 
   &--card {
-    @include background-cover(center);
+    @include set-background(center);
 
     height: 150px;
 
