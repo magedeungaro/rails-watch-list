@@ -11,7 +11,7 @@
     overflow: hidden;
 
     &__description {
-      @include fixed-bottom;
+      // @include fixed-bottom;
 
       height: calc(100% - 120px);
     }
