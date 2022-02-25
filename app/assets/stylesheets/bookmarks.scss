@@ -3,7 +3,9 @@
 // You can use Sass (SCSS) here: https://sass-lang.com/
 .bookmarks {
   &--card {
+
     @include background-cover-top;
+
     position: relative;
     min-height: 350px;
     overflow: hidden;
