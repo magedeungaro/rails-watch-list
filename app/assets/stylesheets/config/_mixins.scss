@@ -4,13 +4,8 @@
   list-style: none;
 }
 
-@mixin background-cover-center {
-  background-position: center;
-  background-size: cover;
-}
-
-@mixin background-cover-top {
-  background-position: top;
+@mixin background-cover($position) {
+  background-position: $position;
   background-size: cover;
 }
 

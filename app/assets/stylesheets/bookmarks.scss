@@ -4,7 +4,7 @@
 .bookmarks {
   &--card {
 
-    @include background-cover-top;
+    @include background-cover(center);
 
     position: relative;
     min-height: 350px;
