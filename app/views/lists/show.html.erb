@@ -1,4 +1,4 @@
-<section class="list--banner" style="<%= prepend_image_gradient(@list.image_url) %>">
+<section class="list--banner" style="<%= prepend_image_gradient(@list.photo.key, cloudinary: true) %>">
   <div class="container w-80">
     <h1 class="text-white text-center fw-bold"><%= @list.name %></h1>
   </div>

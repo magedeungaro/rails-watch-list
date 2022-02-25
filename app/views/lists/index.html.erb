@@ -6,7 +6,7 @@
       <% else %>
         <% @lists.each do |list| %>
           <a href="/lists/<%=list.id%>" class="text-decoration-none col-12 col-md-6 col-lg-2 m-1">
-            <div class="list--card text-white row text-center align-items-center" style="<%= prepend_image_gradient(list.image_url) %>">
+            <div class="list--card text-white row text-center align-items-center" style="<%= prepend_image_gradient(list.photo.key, cloudinary: true) %>">
               <h3><%= list.name %></h3>
             </div>
           </a>
