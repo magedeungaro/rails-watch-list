@@ -4,14 +4,19 @@
 .bookmarks {
   &--card {
 
-    @include set-background(center);
+    // @include set-background(center);
+    background-position: center;
+    background-size: cover;
 
     position: relative;
     min-height: 350px;
     overflow: hidden;
 
     &__description {
-      @include fixed-bottom;
+      // @include fixed-bottom;
+      position: absolute;
+      bottom: 0;
+      left: 0;
 
       height: calc(100% - 120px);
     }

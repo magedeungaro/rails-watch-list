@@ -1,12 +1,12 @@
+@mixin set-background($position) {
+  background-position: $position;
+  background-size: cover;
+}
+
 @mixin reset-list {
   margin: 0;
   padding: 0;
   list-style: none;
-}
-
-@mixin set-background($position) {
-  background-position: $position;
-  background-size: cover;
 }
 
 @mixin text-shadow-readability {
